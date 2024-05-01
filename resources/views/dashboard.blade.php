@@ -11,6 +11,32 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("You're logged in!") }}
                 </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/3 p-4">
+                        <div class="bg-gray-800 dark:bg-gray-900 text-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-lg font-semibold">{{ __('Total Pending Leaves') }}</h2>
+                            <p>
+                                <span class="inline-block text-2xl font-semibold">{{ $pendingLeavesCount }}</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 p-4">
+                        <div class="bg-gray-800 dark:bg-gray-900 text-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-lg font-semibold">{{ __('Total Approved Leaves') }}</h2>
+                            <p>
+                                <span class="inline-block text-2xl font-semibold">{{ $approvedLeavesCount }}</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 p-4">
+                        <div class="bg-gray-800 dark:bg-gray-900 text-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-lg font-semibold">{{ __('Total Rejected Leaves') }}</h2>
+                            <p>
+                                <span class="inline-block text-2xl font-semibold">{{ $rejectedLeavesCount }}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
